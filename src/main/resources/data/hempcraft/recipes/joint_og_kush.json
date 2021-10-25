@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": 
+    [
+        "WWW",
+        "PPP"
+    ],
+    "key":
+    {
+        "P": { "item": "hempcraft:joint_paper" },
+        "W": { "item": "hempcraft:og_kush" }
+    },
+    
+        "result":
+        {
+            "item": "hempcraft:joint_og_kush",
+            "count": 1
+        }
+}
