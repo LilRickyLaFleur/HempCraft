@@ -2,6 +2,7 @@ package com.hempcraft.hempcraft;
 
 import com.hempcraft.hempcraft.items.HC_Items;
 import com.hempcraft.hempcraft.items.HC_Joint;
+import com.hempcraft.hempcraft.world.gen.HCPantGeneration;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -32,30 +33,24 @@ import java.util.stream.Collectors;
 @Mod("hempcraft")
 public class HempCraft
 {
-    // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "HempCraft";
 
-    // Adding Joint Paper to Register
+    // Directly reference a log4j logger.
+    public static final Logger LOGGER = LogManager.getLogger();
+
+    // Adding ITEMS to register
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "HempCraft");
+
+    // Adding BLOCKS to register
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, "HempCraft");
 
     // Export Item Group
 	public static ItemGroup hempcraft_item_group;
 
+    public HempCraft() 
+    {
 
-
-    public HempCraft() {
-        // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        // Register the doClientStuff method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
-
+        // Create Item Group
         hempcraft_item_group = new ItemGroup("HempCraft")
         {
             @Override
@@ -70,6 +65,20 @@ public class HempCraft
 
         // Register Items
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+
+        // Register the setup method for modloading
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        // Register the enqueueIMC method for modloading
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+        // Register the processIMC method for modloading
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        // Register the doClientStuff method for modloading
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        // Register ourselves for server and other game events we are interested in
+        MinecraftForge.EVENT_BUS.register(this);
+
     }
 
     private void setup(final FMLCommonSetupEvent event)

@@ -1,5 +1,9 @@
 package com.hempcraft.hempcraft.items;
 
+import java.util.function.Supplier;
+
+import com.hempcraft.hempcraft.HempCraft;
+
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -7,9 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-
-import java.util.function.Supplier;
-import com.hempcraft.hempcraft.HempCraft;
 
 
 public class HC_Joint 
@@ -150,5 +151,6 @@ public class HC_Joint
         };
 
         HempCraft.ITEMS.register(identifier + Handle, () -> joint);
+        HempCraft.LOGGER.info("Registed Item: " + identifier + Handle);
     }
 }

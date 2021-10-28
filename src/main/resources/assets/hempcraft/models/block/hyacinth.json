@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"1": "hempcraft:block/hyacinth",
+		"cross": "hempcraft:block/hyacinth",
+		"particle": "hempcraft:block/hyacinth"
+	}
+}
