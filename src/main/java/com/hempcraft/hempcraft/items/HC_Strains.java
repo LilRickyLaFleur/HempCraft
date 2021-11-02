@@ -1,12 +1,12 @@
 package com.hempcraft.hempcraft.items;
 
-import com.hempcraft.hempcraft.HempCraft;
+// import com.hempcraft.hempcraft.HempCraft;
 
-import net.minecraft.client.renderer.color.IItemColor;
+// import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.IItemProvider;
-import net.minecraftforge.client.event.ColorHandlerEvent;
+// import net.minecraft.item.ItemStack;
+// import net.minecraft.util.IItemProvider;
+// import net.minecraftforge.client.event.ColorHandlerEvent;
 
 public class HC_Strains 
 {
@@ -19,7 +19,9 @@ public class HC_Strains
         // List of effect strings can be found in HC_Joint.java
 
         // Grade A
-        og_kush_items = new HC_StrainBuilder("og_kush").A();
+        // og_kush_items = new HC_StrainBuilder("og_kush").A();
+        new HC_StrainBuilder("og_kush").A();
+
         
 
 
@@ -41,26 +43,26 @@ public class HC_Strains
 
     }
 
-    public void registerBlockColors(ColorHandlerEvent.Item event)
-    {
-        IItemColor og_kush_color = new IItemColor() {
+    // public void registerBlockColors(ColorHandlerEvent.Item event)
+    // {
+    //     IItemColor og_kush_color = new IItemColor() {
 
-            @Override
-            public int getColor(ItemStack p_getColor_1_, int p_getColor_2_) {
-                return 999999;
-            }
-        };
+    //         @Override
+    //         public int getColor(ItemStack p_getColor_1_, int p_getColor_2_) {
+    //             return 999999;
+    //         }
+    //     };
 
-        IItemProvider og_kush = new IItemProvider() {
+    //     IItemProvider og_kush = new IItemProvider() {
 
-            @Override
-            public Item asItem() {
-                return og_kush_items[0];
-            }
+    //         @Override
+    //         public Item asItem() {
+    //             return og_kush_items[0];
+    //         }
             
-        };
-        event.getItemColors().register(og_kush_color, og_kush);
+    //     };
+    //     event.getItemColors().register(og_kush_color, og_kush);
 
-        HempCraft.LOGGER.info("Registered Item Colors");
-    }
+    //     HempCraft.LOGGER.info("Registered Item Colors");
+    // }
 }

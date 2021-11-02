@@ -1,6 +1,9 @@
 package com.hempcraft.hempcraft.items;
 
-import net.minecraft.client.renderer.model.ModelResourceLocation;
+import java.util.function.Supplier;
+
+import com.hempcraft.hempcraft.HempCraft;
+
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -8,15 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.registries.ObjectHolder;
-
-import java.util.function.Supplier;
-import java.util.logging.Handler;
-
-import com.hempcraft.hempcraft.HempCraft;
 
 
 public class HC_Joint 
@@ -35,7 +29,7 @@ public class HC_Joint
 
     // Joint Effect Timer
     public int effect_timer = 15 * 20;     // Seconds * Ticks
-    public String identifier = "joint_";
+    public String identifier = "joints";
     
     // Effects
     private Supplier<EffectInstance> INSTANT_HEALING_1 = () -> new EffectInstance(Effects.HEAL, 1, 0);
@@ -81,7 +75,7 @@ public class HC_Joint
     }
 
 
-    public Item A()
+    public void A()
     {
         properties
             .food(new Food.Builder()
@@ -92,7 +86,8 @@ public class HC_Joint
                 .build()
             );
 
-        return BUILD();
+        // return BUILD();
+        BUILD();
     }
 
     public void AA(String Effect1, String Effect2)
@@ -156,7 +151,7 @@ public class HC_Joint
             }
         };
         
-        HempCraft.ITEMS.register(identifier+Handle, () -> joint);
+        HempCraft.ITEMS.register(identifier+ "/" +Handle, () -> joint);
 
         return joint;
     }

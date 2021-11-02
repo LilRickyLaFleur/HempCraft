@@ -20,13 +20,25 @@ public class HC_StrainBuilder
         new HC_Seeds(Handle, seed_properties);
     }
 
-    public Item[] A()
-    {
-        Item joint = new HC_Joint(Handle).A();
-        Item cone = new HC_Cones(Handle).A();
+    // public Item[] A()
+    // {
+    //     Item joint = new HC_Joint(Handle).A();
+    //     Item cone = new HC_Cones(Handle).A();
 
-        Item[] array = {joint, cone};
-        return array;
+    //     Item[] array = {joint, cone};
+    //     return array;
+
+    // }
+
+    public void A()
+    {
+        // Item joint = new HC_Joint(Handle).A();
+        // Item cone = new HC_Cones(Handle).A();
+        new HC_Joint(Handle).A();
+        new HC_Cones(Handle).A();
+
+        // Item[] array = {joint, cone};
+        // return array;
 
     }
 

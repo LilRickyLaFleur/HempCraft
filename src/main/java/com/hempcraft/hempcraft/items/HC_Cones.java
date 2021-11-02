@@ -1,6 +1,6 @@
 package com.hempcraft.hempcraft.items;
 
-import net.minecraft.item.Item;
+// import net.minecraft.item.Item;
 
 public class HC_Cones 
 {
@@ -10,13 +10,20 @@ public class HC_Cones
     public HC_Cones(String handle)
     {
         Cone = new HC_Joint(handle);
-        Cone.identifier = "cone_";
+        Cone.identifier = "cones";
         Cone.effect_timer = 45*20;
     }
 
-    public Item A()
+    // public Item A()
+    // {
+    //     return Cone.A();
+        
+    // }
+
+    public void A()
     {
-        return Cone.A();
+        Cone.A();
+        
     }
 
     public void AA(String Effect1, String Effect2)

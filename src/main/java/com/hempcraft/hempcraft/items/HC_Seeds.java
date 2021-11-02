@@ -8,6 +8,6 @@ public class HC_Seeds
     public HC_Seeds(String Handler, Item.Properties Properties)
     {
         Item seeds = new Item(Properties);
-        HempCraft.ITEMS.register("seeds_" + Handler, () -> seeds);
+        HempCraft.ITEMS.register("seeds/" + Handler, () -> seeds);
     }
 }

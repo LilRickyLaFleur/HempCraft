@@ -10,7 +10,7 @@ public class HC_Bud
     {
         // Create Item
         Item bud = new Item(Properties);
-        HempCraft.ITEMS.register(Handler, () -> bud);
+        HempCraft.ITEMS.register("buds/" + Handler, () -> bud);
     }
 
 }
