@@ -1,5 +1,6 @@
 package com.hempcraft.hempcraft.items;
 
+import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -7,8 +8,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.ObjectHolder;
 
 import java.util.function.Supplier;
+import java.util.logging.Handler;
+
 import com.hempcraft.hempcraft.HempCraft;
 
 
@@ -74,7 +81,7 @@ public class HC_Joint
     }
 
 
-    public void A()
+    public Item A()
     {
         properties
             .food(new Food.Builder()
@@ -85,7 +92,7 @@ public class HC_Joint
                 .build()
             );
 
-        BUILD();
+        return BUILD();
     }
 
     public void AA(String Effect1, String Effect2)
@@ -138,7 +145,7 @@ public class HC_Joint
         BUILD();
     }
 
-    public void BUILD()
+    public Item BUILD()
     {
         Item joint = new Item(properties)
         {
@@ -148,7 +155,9 @@ public class HC_Joint
                 return UseAction.BOW;
             }
         };
+        
+        HempCraft.ITEMS.register(identifier+Handle, () -> joint);
 
-        HempCraft.ITEMS.register(identifier + Handle, () -> joint);
+        return joint;
     }
 }

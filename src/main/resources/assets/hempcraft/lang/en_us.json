@@ -6,19 +6,71 @@
     "item.hempcraft.plant_og_kush": "OG Kush Plant",
     "item.hempcraft.seeds_og_kush": "OG Kush Seeds",
     "item.hempcraft.joint_og_kush": "OG Kush Joint",
+    "item.hempcraft.cone_og_kush": "OG Kush Cone",
 
     "item.hempcraft.chem_fruit": "Chem Fruit",
     "item.hempcraft.plant_chem_fruit": "Chem Fruit Plant",
     "item.hempcraft.seeds_chem_fruit": "Chem Fruit Seeds",
     "item.hempcraft.joint_chem_fruit": "Chem Fruit Joint",
+    "item.hempcraft.cone_chem_fruit": "Chem Fruit Cone",
 
     "item.hempcraft.trainwreck": "Trainwreck",
     "item.hempcraft.plant_trainwreck": "Trainwreck Plant",
     "item.hempcraft.seeds_trainwreck": "Trainwreck Seeds",
     "item.hempcraft.joint_trainwreck": "Trainwreck Joint",
+    "item.hempcraft.cone_trainwreck": "Trainwreck Cone",
     
     "item.hempcraft.purple_kush": "Purple Kush",
     "item.hempcraft.plant_purple_kush": "Purple Kush Plant",
     "item.hempcraft.seeds_purple_kush": "Purple Kush Seeds",
-    "item.hempcraft.joint_purple_kush": "Purple Kush Joint"
+    "item.hempcraft.joint_purple_kush": "Purple Kush Joint",
+    "item.hempcraft.cone_purple_kush": "Purple Kush Cone",
+
+    "item.hempcraft.skywalker_og": "Skywalker OG",
+    "item.hempcraft.plant_skywalker_og": "Skywalker OG Plant",
+    "item.hempcraft.seeds_skywalker_og": "Skywalker OG Seeds",
+    "item.hempcraft.joint_skywalker_og": "Skywalker OG Joint",
+    "item.hempcraft.cone_skywalker_og": "Skywalker OG Cone",
+
+    "item.hempcraft.platinum_cookies": "Platinum Cookies",
+    "item.hempcraft.plant_platinum_cookies": "Platinum Cookies Plant",
+    "item.hempcraft.seeds_platinum_cookies": "Platinum Cookies Seeds",
+    "item.hempcraft.joint_platinum_cookies": "Platinum Cookies Joint",
+    "item.hempcraft.cone_platinum_cookies": "Platinum Cookies Cone",
+
+    "item.hempcraft.laughing_buddha": "Laughing Buddha",
+    "item.hempcraft.plant_laughing_buddha": "Laughing Buddha Plant",
+    "item.hempcraft.seeds_laughing_buddha": "Laughing Buddha Seeds",
+    "item.hempcraft.joint_laughing_buddha": "Laughing Buddha Joint",
+    "item.hempcraft.cone_laughing_buddha": "Laughing Buddha Cone",
+
+    "item.hempcraft.sour_budda": "Sour Budda",
+    "item.hempcraft.plant_sour_budda": "Sour Budda Plant",
+    "item.hempcraft.seeds_sour_budda": "Sour Budda Seeds",
+    "item.hempcraft.joint_sour_budda": "Sour Budda Joint",
+    "item.hempcraft.cone_sour_budda": "Sour Budda Cone",
+
+    "item.hempcraft.blue_widow": "Blue Widow",
+    "item.hempcraft.plant_blue_widow": "Blue Widow Plant",
+    "item.hempcraft.seeds_blue_widow": "Blue Widow Seeds",
+    "item.hempcraft.joint_blue_widow": "Blue Widow Joint",
+    "item.hempcraft.cone_blue_widow": "Blue Widow Cone",
+
+    "item.hempcraft.holy_grain": "Holy Grain",
+    "item.hempcraft.plant_holy_grain": "Holy Grain Plant",
+    "item.hempcraft.seeds_holy_grain": "Holy Grain Seeds",
+    "item.hempcraft.joint_holy_grain": "Holy Grain Joint",
+    "item.hempcraft.cone_holy_grain": "Holy Grain Cone",
+
+    "item.hempcraft.scout_master": "Scout Master",
+    "item.hempcraft.plant_scout_master": "Scout Master Plant",
+    "item.hempcraft.seeds_scout_master": "Scout Master Seeds",
+    "item.hempcraft.joint_scout_master": "Scout Master Joint",
+    "item.hempcraft.cone_scout_master": "Scout Master Cone",
+
+    "item.hempcraft.rickys_special": "Rickys Special",
+    "item.hempcraft.plant_rickys_special": "Rickys Special Plant",
+    "item.hempcraft.seeds_rickys_special": "Rickys Special Seeds",
+    "item.hempcraft.joint_rickys_special": "Rickys Special Joint",
+    "item.hempcraft.cone_rickys_special": "Rickys Special Cone"
 }

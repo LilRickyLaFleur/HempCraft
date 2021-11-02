@@ -33,10 +33,10 @@ import java.util.stream.Collectors;
 public class HempCraft
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     // Adding Joint Paper to Register
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "HempCraft");
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "hempcraft");
 
     // Export Item Group
 	public static ItemGroup hempcraft_item_group;

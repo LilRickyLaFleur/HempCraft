@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "hempcraft:item",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "hempcraft:item/seeds",
+		"particle": "hempcraft:item/seeds"
+	},
+	"elements": [
+		{
+			"from": [1, 1, 8],
+			"to": [13, 17, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0.25, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.25, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0.25], "texture": "#0"},
+				"down": {"uv": [0, 0, 3, 0.25], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-60, 0, 0],
+			"translation": [0.25, 0.75, -1.5],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-60, 0, 0],
+			"translation": [0.25, 0.75, -1.5],
+			"scale": [0.27, 0.27, 0.27]
+		},
+		"firstperson_righthand": {
+			"translation": [4, 1.5, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"firstperson_lefthand": {
+			"translation": [4, 1.5, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"ground": {
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"translation": [1, -1, 0]
+		},
+		"fixed": {
+			"translation": [1, -0.75, -1]
+		}
+	}
+}

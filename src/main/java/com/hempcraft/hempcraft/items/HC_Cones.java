@@ -1,5 +1,7 @@
 package com.hempcraft.hempcraft.items;
 
+import net.minecraft.item.Item;
+
 public class HC_Cones 
 {
 
@@ -12,9 +14,9 @@ public class HC_Cones
         Cone.effect_timer = 45*20;
     }
 
-    public void A()
+    public Item A()
     {
-        Cone.A();
+        return Cone.A();
     }
 
     public void AA(String Effect1, String Effect2)
